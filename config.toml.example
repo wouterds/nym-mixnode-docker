@@ -1,8 +1,8 @@
 [mixnode]
-location = 'London, UK'
+location = 'Your location,  e.g.: London, UK'
 layer = 3
-announce_address = '203.30.113.42:1789'
-#incentives_address = '0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B'
+announce_address = 'your-public-ipv4:1789'
+incentives_address = 'your ethereum wallet address'
 
 # do not change any of below unless you know what you're doing
 version = '0.9.2'

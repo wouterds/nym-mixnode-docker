@@ -4,6 +4,7 @@ services:
     image: nym-mixnode
     container_name: nym-mixnode
     restart: unless-stopped
+    mem_limit: 256mb
     ports:
       - 1789:1789
     build:

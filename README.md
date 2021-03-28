@@ -36,3 +36,11 @@ nano config.toml
 # start your node
 docker-compose up -d
 ```
+
+## Troubleshooting
+
+If for any reason your node is having issues and/or shut down incorrectly, it sometimes help to unregister it and spin it back up. To do this you need to shut it down first (`docker-compose down`) and then run the following command.
+
+```sh
+docker run --rm -v ${PWD}/data:/root/.nym/mixnodes/mixer/data -v ${PWD}/config.toml:/root/.nym/mixnodes/mixer/config/config.toml nym-mixnode nym-mixnode unregister --id mixer
+```

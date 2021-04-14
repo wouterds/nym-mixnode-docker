@@ -6,7 +6,7 @@ RUN set -ex \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y libssl-dev pkg-config git tini \
     && git clone https://github.com/nymtech/nym.git \
     && cd ./nym \
-    && git checkout 9d2c445bb7777a6bc307b23c9c83684260737346 \
+    && git checkout tags/${NYM_VERSION} \
     && cd ./mixnode \
     && cargo build --release
 

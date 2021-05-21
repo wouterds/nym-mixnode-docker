@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Checkout this repo https://github.com/louneskmt/docker-nym
+
 # nym-mixnode-docker
 
 This is a multistage Docker image of the nym mixnode. The official nym repository can be found here:
